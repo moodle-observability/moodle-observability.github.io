@@ -24,6 +24,8 @@ Logo da organização (quadrada, sem cantos arredondados: cada aplicação arred
 | `img/plugins/tool_*.svg` | Logos dos plugins nos cards (cópias de `docs/logo/logo.svg` de cada repositório) |
 | `favicon.ico` | Favicon 16/32/48 px |
 
+Os rasters (`logo-512.png`, `apple-touch-icon.png`, `favicon.ico`, aqui e em `docs/logo/` de cada plugin) são gerados a partir dos SVGs com `python scripts/gerar_rasters.py` (espera os repositórios `tool_*` clonados ao lado de `pages/`) (Chrome/Edge headless + Pillow). Rode-o sempre que um `logo.svg` mudar.
+
 
 ---
 
