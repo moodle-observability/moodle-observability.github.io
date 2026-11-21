@@ -434,8 +434,12 @@ header {
 }
 
 .card-icon {
-  font-size: 1.5rem;
-  line-height: 1;
+  display: block;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-divider);
 }
 
 .card-title {
@@ -476,6 +480,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: var(--space-3);
   margin-top: auto;
 }
@@ -512,6 +517,16 @@ header {
 .docs-link:hover {
   color: var(--color-text);
   text-decoration: underline;
+}
+
+.docs-link.is-disabled {
+  color: var(--color-text-faint);
+  cursor: not-allowed;
+}
+
+.docs-link.is-disabled:hover {
+  color: var(--color-text-faint);
+  text-decoration: none;
 }
 
 /* FOOTER */
