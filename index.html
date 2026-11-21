@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moodle Observability — Open Source Observability for Moodle</title>
+  <meta name="description" content="Moodle Observability: open-source plugins and tools for error tracking, performance monitoring, logs, metrics and tracing in Moodle." />
+  <script>
+    (function() {
+      // 1. Verificar preferência salva previamente pelo usuário
+      var savedLang = localStorage.getItem('user_lang');
+      if (savedLang) {
+        var cleanSaved = savedLang.toLowerCase();
+        if (cleanSaved.indexOf('pt') === 0) {
+          window.location.replace('pt-br/');
+          return;
+        } else if (cleanSaved.indexOf('en') === 0) {
+          window.location.replace('en/');
+          return;
+        }
+      }
+
+      // 2. Detectar idioma do navegador (navigator.languages ou navigator.language)
+      var userLangs = navigator.languages || [navigator.language || navigator.userLanguage || ''];
+      var isPortuguese = false;
+      for (var i = 0; i < userLangs.length; i++) {
+        var lang = (userLangs[i] || '').toLowerCase();
+        if (lang.indexOf('pt') === 0) {
+          isPortuguese = true;
+          break;
+        }
+      }
+
+      if (isPortuguese) {
+        window.location.replace('pt-br/');
+      } else {
+        // Fallback default: English
+        window.location.replace('en/');
+      }
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=en/" />
+  </noscript>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f8fafc;
+      color: #334155;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .loader {
+      width: 42px;
+      height: 42px;
+      border: 3px solid #e2e8f0;
+      border-top-color: #ea580c;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 1.5rem;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    a {
+      color: #ea580c;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 0.5rem;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <p>Redirecionando / Redirecting...</p>
+  <p style="font-size: 0.9rem; color: #64748b; margin-top: 0.5rem;">
+    <a href="en/">English (Default)</a> &bull;
+    <a href="pt-br/">Português (Brasil)</a>
+  </p>
+</body>
+</html>
