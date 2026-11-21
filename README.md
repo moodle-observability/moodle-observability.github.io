@@ -21,6 +21,7 @@ Logo da organização (quadrada, sem cantos arredondados: cada aplicação arred
 | `img/logo-mark.svg` | Só o símbolo, fundo transparente (cabeçalho do portal) |
 | `img/logo-512.png` | PNG 512 px (`og:image` e avatar da organização no GitHub) |
 | `img/apple-touch-icon.png` | Ícone 180 px para iOS |
+| `img/plugins/tool_*.svg` | Logos dos plugins nos cards (cópias de `docs/logo/logo.svg` de cada repositório) |
 | `favicon.ico` | Favicon 16/32/48 px |
 
 
