@@ -118,17 +118,7 @@
         </p>
       </div>
 
-      <!-- SECTION 1: ERROR TRACKING & APM -->
-      <section class="category-section" id="error-tracking" data-group="plugins">
-        <div class="section-intro">
-          <div class="section-badge"><i data-lucide="bug"></i> Rastreamento de Erros & APM</div>
-          <h2 class="section-title">🐞 Rastreamento de Erros & Monitoramento de Desempenho</h2>
-          <p class="section-desc">
-            Capture erros PHP, exceções e requisições lentas do Moodle e envie para um serviço de APM / rastreamento de erros.
-          </p>
-        </div>
-
-        <div class="section-grid">
+      <div class="section-grid plugins-grid">
           <article class="repo-card" data-search="moodle-tool_sentry tool sentry error tracking apm performance monitoring exceptions observability" data-group="plugins">
             <div>
               <div class="card-header">
@@ -142,10 +132,8 @@
                 Plugin de ferramenta administrativa que envia erros, exceções e traces de desempenho do Moodle para o Sentry (self-hosted ou sentry.io). Pode iniciar antes do Moodle via <code>auto_prepend_file</code>, capturando até falhas de conexão com o banco.
               </p>
               <div class="card-tags">
-                <span class="tag">Ferramenta Admin</span>
+                <span class="tag">Rastreamento de Erros & APM</span>
                 <span class="tag">Sentry</span>
-                <span class="tag">Rastreamento de Erros</span>
-                <span class="tag">APM</span>
               </div>
             </div>
             <div class="card-bottom">
@@ -157,20 +145,7 @@
               </a>
             </div>
           </article>
-        </div>
-      </section>
 
-      <!-- SECTION 2: METRICS -->
-      <section class="category-section" id="metrics" data-group="plugins">
-        <div class="section-intro">
-          <div class="section-badge"><i data-lucide="bar-chart-3"></i> Métricas</div>
-          <h2 class="section-title">📈 Métricas</h2>
-          <p class="section-desc">
-            Exponha métricas da plataforma para dashboards e alertas no Prometheus e no Grafana.
-          </p>
-        </div>
-
-        <div class="section-grid">
           <article class="repo-card" data-search="moodle-tool_prometheus tool prometheus openmetrics metrics grafana exporter active users tasks quiz cache disk" data-group="plugins">
             <div>
               <div class="card-header">
@@ -184,7 +159,7 @@
                 Exportador OpenMetrics: endpoint <code>/metrics</code> protegido por token com usuários e sessões ativos, fila de adhoc tasks, tentativas de questionário em andamento, taxa de acerto do MUC e uso de disco do moodledata.
               </p>
               <div class="card-tags">
-                <span class="tag">Ferramenta Admin</span>
+                <span class="tag">Métricas</span>
                 <span class="tag">Prometheus</span>
                 <span class="tag">OpenMetrics</span>
                 <span class="tag">Grafana</span>
@@ -199,20 +174,7 @@
               </a>
             </div>
           </article>
-        </div>
-      </section>
 
-      <!-- SECTION 3: CRON & TASKS -->
-      <section class="category-section" id="tasks" data-group="plugins">
-        <div class="section-intro">
-          <div class="section-badge"><i data-lucide="timer"></i> Cron & Tarefas</div>
-          <h2 class="section-title">⏱️ Monitoramento de Cron & Tarefas</h2>
-          <p class="section-desc">
-            Saiba quando o cron parar ou uma tarefa falhar repetidamente, antes que os usuários percebam.
-          </p>
-        </div>
-
-        <div class="section-grid">
           <article class="repo-card" data-search="moodle-tool_taskmonitor tool taskmonitor cron scheduled adhoc task monitor alerts failures report" data-group="plugins">
             <div>
               <div class="card-header">
@@ -226,9 +188,7 @@
                 Detecta cron parado, registra duração e falhas das tarefas agendadas, aponta adhoc tasks presas ou falhando e avisa os administradores pelas mensagens do Moodle.
               </p>
               <div class="card-tags">
-                <span class="tag">Ferramenta Admin</span>
-                <span class="tag">Cron</span>
-                <span class="tag">Tarefas</span>
+                <span class="tag">Cron & Tarefas</span>
                 <span class="tag">Alertas</span>
               </div>
             </div>
@@ -241,20 +201,7 @@
               </a>
             </div>
           </article>
-        </div>
-      </section>
 
-      <!-- SECTION 4: HEALTH CHECKS -->
-      <section class="category-section" id="health" data-group="plugins">
-        <div class="section-intro">
-          <div class="section-badge"><i data-lucide="heart-pulse"></i> Health Checks</div>
-          <h2 class="section-title">💓 Health Checks</h2>
-          <p class="section-desc">
-            Endpoints de liveness e readiness para Kubernetes e balanceadores de carga.
-          </p>
-        </div>
-
-        <div class="section-grid">
           <article class="repo-card" data-search="moodle-tool_healthcheck tool healthcheck liveness readiness kubernetes probe load balancer haproxy nginx redis" data-group="plugins">
             <div>
               <div class="card-header">
@@ -268,7 +215,7 @@
                 Endpoint de liveness leve e endpoint de readiness que verifica banco de dados, caches, moodledata e sessões, com relatório JSON de cada verificação.
               </p>
               <div class="card-tags">
-                <span class="tag">Ferramenta Admin</span>
+                <span class="tag">Health Checks</span>
                 <span class="tag">Kubernetes</span>
                 <span class="tag">Balanceador</span>
                 <span class="tag">Probes</span>
@@ -283,20 +230,7 @@
               </a>
             </div>
           </article>
-        </div>
-      </section>
 
-      <!-- SECTION 5: TRACING -->
-      <section class="category-section" id="tracing" data-group="plugins">
-        <div class="section-intro">
-          <div class="section-badge"><i data-lucide="git-branch"></i> Tracing</div>
-          <h2 class="section-title">🧭 Tracing Distribuído</h2>
-          <p class="section-desc">
-            Acompanhe cada requisição pelo banco de dados, chamadas HTTP, web services e tarefas.
-          </p>
-        </div>
-
-        <div class="section-grid">
           <article class="repo-card" data-search="moodle-tool_otel tool otel opentelemetry tracing spans otlp jaeger tempo sentry" data-group="plugins">
             <div>
               <div class="card-header">
@@ -310,10 +244,9 @@
                 Tracing com OpenTelemetry para o Moodle: spans de requisições, consultas ao banco, chamadas HTTP de saída, web services e tarefas, exportados via OTLP para Jaeger, Tempo ou Sentry.
               </p>
               <div class="card-tags">
-                <span class="tag">Ferramenta Admin</span>
+                <span class="tag">Tracing</span>
                 <span class="tag">OpenTelemetry</span>
                 <span class="tag">OTLP</span>
-                <span class="tag">Tracing</span>
               </div>
             </div>
             <div class="card-bottom">
@@ -325,8 +258,7 @@
               </a>
             </div>
           </article>
-        </div>
-      </section>
+      </div>
     </section>
   </main>
 

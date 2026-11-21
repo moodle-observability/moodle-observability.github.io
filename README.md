@@ -14,12 +14,12 @@ O visual (`css/style.css`, `js/main.js`) é o mesmo do portal da [Moodle by Kels
 
 ## 🗂️ Estrutura das Macro Seções (Grandes Cards)
 
-1. **`🔌 Plugins Moodle`** (`#plugins`) — 5 repositórios, cada card com selo de status (Estável, Em desenvolvimento, Em pesquisa) e link para a documentação
-   - **Rastreamento de Erros & APM** (`#error-tracking`): `moodle-tool_sentry`
-   - **Métricas** (`#metrics`): `moodle-tool_prometheus`
-   - **Cron & Tarefas** (`#tasks`): `moodle-tool_taskmonitor`
-   - **Health Checks** (`#health`): `moodle-tool_healthcheck`
-   - **Tracing** (`#tracing`): `moodle-tool_otel`
+1. **`🔌 Plugins Moodle`** (`#plugins`) — 5 repositórios numa grade única (sem subcategorias, já que cada categoria teria um só plugin). A categoria aparece como primeira tag do card, que também traz o selo de status (Estável, Em desenvolvimento, Em pesquisa) e o link para a documentação:
+   - `moodle-tool_sentry` — Rastreamento de Erros & APM
+   - `moodle-tool_prometheus` — Métricas
+   - `moodle-tool_taskmonitor` — Cron & Tarefas
+   - `moodle-tool_healthcheck` — Health Checks
+   - `moodle-tool_otel` — Tracing
 
 A documentação de cada plugin novo é publicada pelo próprio repositório em `https://moodle-observability.github.io/<repositório>/`.
 
