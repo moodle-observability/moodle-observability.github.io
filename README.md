@@ -14,8 +14,14 @@ O visual (`css/style.css`, `js/main.js`) é o mesmo do portal da [Moodle by Kels
 
 ## 🗂️ Estrutura das Macro Seções (Grandes Cards)
 
-1. **`🔌 Plugins Moodle`** (`#plugins`) — 1 repositório
-   - **Rastreamento de Erros & APM**: `moodle-tool_sentry` (ainda em `EsdrasCaleb/moodle-tool_sentry`; trocar os links quando o repositório for migrado para a organização)
+1. **`🔌 Plugins Moodle`** (`#plugins`) — 5 repositórios, cada card com selo de status (Estável, Em desenvolvimento, Em pesquisa) e link para a documentação
+   - **Rastreamento de Erros & APM** (`#error-tracking`): `moodle-tool_sentry`
+   - **Métricas** (`#metrics`): `moodle-tool_prometheus`
+   - **Cron & Tarefas** (`#tasks`): `moodle-tool_taskmonitor`
+   - **Health Checks** (`#health`): `moodle-tool_healthcheck`
+   - **Tracing** (`#tracing`): `moodle-tool_otel`
+
+A documentação de cada plugin novo é publicada pelo próprio repositório em `https://moodle-observability.github.io/<repositório>/`.
 
 Ficam fora do portal os repositórios internos (`.github`, `workspace`, `moodle-observability.github.io`).
 

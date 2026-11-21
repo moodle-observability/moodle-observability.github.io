@@ -98,10 +98,10 @@
       <!-- FILTER BAR -->
       <div class="filter-bar">
         <button class="filter-btn active" data-filter="all">
-          <i data-lucide="layout-grid"></i> All <span class="filter-badge">1</span>
+          <i data-lucide="layout-grid"></i> All <span class="filter-badge">5</span>
         </button>
         <button class="filter-btn" data-filter="plugins">
-          <i data-lucide="plug"></i> Moodle Plugins <span class="filter-badge">1</span>
+          <i data-lucide="plug"></i> Moodle Plugins <span class="filter-badge">5</span>
         </button>
       </div>
     </section>
@@ -129,9 +129,6 @@
         </div>
 
         <div class="section-grid">
-
-          <!-- 1. TOOL SENTRY -->
-          <!-- TODO: trocar os links para moodle-observability/moodle-tool_sentry quando o repositório for migrado -->
           <article class="repo-card" data-search="moodle-tool_sentry tool sentry error tracking apm performance monitoring exceptions observability" data-group="plugins">
             <div>
               <div class="card-header">
@@ -139,6 +136,7 @@
                   <span class="card-icon">🛰️</span>
                   <h3 class="card-title">moodle-tool_sentry</h3>
                 </div>
+                <span class="status-pill status-stable">Stable</span>
               </div>
               <p class="card-desc">
                 Admin tool plugin that sends Moodle errors, exceptions and performance traces to Sentry (self-hosted or sentry.io). It can start before Moodle through <code>auto_prepend_file</code>, catching even database connection failures.
@@ -151,11 +149,179 @@
               </div>
             </div>
             <div class="card-bottom">
-              <a href="https://github.com/EsdrasCaleb/moodle-tool_sentry" target="_blank" rel="noopener" class="repo-link">
+              <a href="https://github.com/moodle-observability/moodle-tool_sentry" target="_blank" rel="noopener" class="repo-link">
                 GitHub <i data-lucide="external-link"></i>
               </a>
               <a href="https://moodle.org/plugins/tool_sentry" target="_blank" rel="noopener" class="docs-link">
                 Moodle Plugins directory <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 2: METRICS -->
+      <section class="category-section" id="metrics" data-group="plugins">
+        <div class="section-intro">
+          <div class="section-badge"><i data-lucide="bar-chart-3"></i> Metrics</div>
+          <h2 class="section-title">📈 Metrics</h2>
+          <p class="section-desc">
+            Expose platform metrics for Prometheus and Grafana dashboards and alerts.
+          </p>
+        </div>
+
+        <div class="section-grid">
+          <article class="repo-card" data-search="moodle-tool_prometheus tool prometheus openmetrics metrics grafana exporter active users tasks quiz cache disk" data-group="plugins">
+            <div>
+              <div class="card-header">
+                <div class="card-title-group">
+                  <span class="card-icon">📊</span>
+                  <h3 class="card-title">moodle-tool_prometheus</h3>
+                </div>
+                <span class="status-pill status-planned">In development</span>
+              </div>
+              <p class="card-desc">
+                OpenMetrics exporter: a token-protected <code>/metrics</code> endpoint with active users and sessions, adhoc task queue, quiz attempts in progress, MUC cache hit ratio and moodledata disk usage.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Admin Tool</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">OpenMetrics</span>
+                <span class="tag">Grafana</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="https://github.com/moodle-observability/moodle-tool_prometheus" target="_blank" rel="noopener" class="repo-link">
+                GitHub <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://moodle-observability.github.io/moodle-tool_prometheus/" target="_blank" rel="noopener" class="docs-link">
+                Documentation <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 3: CRON & TASKS -->
+      <section class="category-section" id="tasks" data-group="plugins">
+        <div class="section-intro">
+          <div class="section-badge"><i data-lucide="timer"></i> Cron & Tasks</div>
+          <h2 class="section-title">⏱️ Cron & Task Monitoring</h2>
+          <p class="section-desc">
+            Know when the cron stops or a task keeps failing, before users notice.
+          </p>
+        </div>
+
+        <div class="section-grid">
+          <article class="repo-card" data-search="moodle-tool_taskmonitor tool taskmonitor cron scheduled adhoc task monitor alerts failures report" data-group="plugins">
+            <div>
+              <div class="card-header">
+                <div class="card-title-group">
+                  <span class="card-icon">🩺</span>
+                  <h3 class="card-title">moodle-tool_taskmonitor</h3>
+                </div>
+                <span class="status-pill status-planned">In development</span>
+              </div>
+              <p class="card-desc">
+                Detects a stopped cron, records scheduled task durations and failures, flags stuck or failing adhoc tasks and alerts administrators through Moodle messaging.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Admin Tool</span>
+                <span class="tag">Cron</span>
+                <span class="tag">Tasks</span>
+                <span class="tag">Alerts</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="https://github.com/moodle-observability/moodle-tool_taskmonitor" target="_blank" rel="noopener" class="repo-link">
+                GitHub <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://moodle-observability.github.io/moodle-tool_taskmonitor/" target="_blank" rel="noopener" class="docs-link">
+                Documentation <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 4: HEALTH CHECKS -->
+      <section class="category-section" id="health" data-group="plugins">
+        <div class="section-intro">
+          <div class="section-badge"><i data-lucide="heart-pulse"></i> Health Checks</div>
+          <h2 class="section-title">💓 Health Checks</h2>
+          <p class="section-desc">
+            Liveness and readiness endpoints for Kubernetes and load balancers.
+          </p>
+        </div>
+
+        <div class="section-grid">
+          <article class="repo-card" data-search="moodle-tool_healthcheck tool healthcheck liveness readiness kubernetes probe load balancer haproxy nginx redis" data-group="plugins">
+            <div>
+              <div class="card-header">
+                <div class="card-title-group">
+                  <span class="card-icon">✅</span>
+                  <h3 class="card-title">moodle-tool_healthcheck</h3>
+                </div>
+                <span class="status-pill status-planned">In development</span>
+              </div>
+              <p class="card-desc">
+                A lightweight liveness endpoint and a readiness endpoint that checks the database, caches, moodledata and sessions, with a JSON report of each check.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Admin Tool</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">Load Balancer</span>
+                <span class="tag">Probes</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="https://github.com/moodle-observability/moodle-tool_healthcheck" target="_blank" rel="noopener" class="repo-link">
+                GitHub <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://moodle-observability.github.io/moodle-tool_healthcheck/" target="_blank" rel="noopener" class="docs-link">
+                Documentation <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 5: TRACING -->
+      <section class="category-section" id="tracing" data-group="plugins">
+        <div class="section-intro">
+          <div class="section-badge"><i data-lucide="git-branch"></i> Tracing</div>
+          <h2 class="section-title">🧭 Distributed Tracing</h2>
+          <p class="section-desc">
+            Follow each request through the database, HTTP calls, web services and tasks.
+          </p>
+        </div>
+
+        <div class="section-grid">
+          <article class="repo-card" data-search="moodle-tool_otel tool otel opentelemetry tracing spans otlp jaeger tempo sentry" data-group="plugins">
+            <div>
+              <div class="card-header">
+                <div class="card-title-group">
+                  <span class="card-icon">🔭</span>
+                  <h3 class="card-title">moodle-tool_otel</h3>
+                </div>
+                <span class="status-pill status-research">Research</span>
+              </div>
+              <p class="card-desc">
+                OpenTelemetry tracing for Moodle: spans for requests, database queries, outgoing HTTP calls, web services and tasks, exported through OTLP to Jaeger, Tempo or Sentry.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Admin Tool</span>
+                <span class="tag">OpenTelemetry</span>
+                <span class="tag">OTLP</span>
+                <span class="tag">Tracing</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="https://github.com/moodle-observability/moodle-tool_otel" target="_blank" rel="noopener" class="repo-link">
+                GitHub <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://moodle-observability.github.io/moodle-tool_otel/" target="_blank" rel="noopener" class="docs-link">
+                Documentation <i data-lucide="arrow-up-right"></i>
               </a>
             </div>
           </article>
