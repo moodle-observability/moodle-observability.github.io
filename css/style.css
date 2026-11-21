@@ -124,15 +124,8 @@ header {
 .brand-logo {
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, #ea580c, #f59e0b);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 1.15rem;
-  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.3);
+  display: block;
+  object-fit: contain;
 }
 
 .brand-badge {

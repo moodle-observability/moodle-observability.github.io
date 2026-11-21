@@ -10,6 +10,20 @@ Site institucional e portal hub de repositórios do ecossistema **Moodle Observa
 
 O visual (`css/style.css`, `js/main.js`) é o mesmo do portal da [Moodle by KelsonCM](https://moodle-by-kelsoncm.github.io).
 
+
+## 🎨 Identidade visual
+
+Logo da organização (quadrada, sem cantos arredondados: cada aplicação arredonda como quiser): monograma **"o11"** (o "o" e o "11" de *mo11y*: anel laranja `#ea580c` e duas barras de métrica, laranja e azul `#0284c7`).
+
+| Arquivo | Uso |
+| :--- | :--- |
+| `img/logo.svg` | Logo quadrada com fundo branco, sem cantos arredondados (favicon SVG e uso geral) |
+| `img/logo-mark.svg` | Só o símbolo, fundo transparente (cabeçalho do portal) |
+| `img/logo-512.png` | PNG 512 px (`og:image` e avatar da organização no GitHub) |
+| `img/apple-touch-icon.png` | Ícone 180 px para iOS |
+| `favicon.ico` | Favicon 16/32/48 px |
+
+
 ---
 
 ## 🗂️ Estrutura das Macro Seções (Grandes Cards)
