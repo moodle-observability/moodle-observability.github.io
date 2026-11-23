@@ -102,10 +102,10 @@
       <!-- FILTER BAR -->
       <div class="filter-bar">
         <button class="filter-btn active" data-filter="all">
-          <i data-lucide="layout-grid"></i> All <span class="filter-badge">5</span>
+          <i data-lucide="layout-grid"></i> All <span class="filter-badge">7</span>
         </button>
         <button class="filter-btn" data-filter="plugins">
-          <i data-lucide="plug"></i> Moodle Plugins <span class="filter-badge">5</span>
+          <i data-lucide="plug"></i> Moodle Plugins <span class="filter-badge">7</span>
         </button>
       </div>
     </section>
@@ -254,10 +254,10 @@
                   <img class="card-icon" src="/img/plugins/tool_otel.svg" alt="" width="40" height="40" />
                   <h3 class="card-title">moodle-tool_otel</h3>
                 </div>
-                <span class="status-pill status-research">Research</span>
+                <span class="status-pill status-planned">In development</span>
               </div>
               <p class="card-desc">
-                OpenTelemetry tracing for Moodle: spans for requests, database queries, outgoing HTTP calls, web services and tasks, exported through OTLP to Jaeger, Tempo or Sentry.
+                OpenTelemetry tracing for Moodle: spans for requests (with database aggregates), web services and tasks, exported through OTLP to Jaeger, Tempo or Sentry.
               </p>
               <div class="card-tags">
                 <span class="tag">Tracing</span>
@@ -273,6 +273,68 @@
                 Marketplace
               </span>
               <a href="https://moodle-observability.github.io/moodle-tool_otel/" target="_blank" rel="noopener" class="docs-link">
+                Documentation <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="repo-card" data-search="moodle-tool_opensearch tool opensearch queue bulk data streams ism retention documents" data-group="plugins">
+            <div>
+              <div class="card-header">
+                <div class="card-title-group">
+                  <img class="card-icon" src="/img/plugins/tool_opensearch.svg" alt="" width="40" height="40" />
+                  <h3 class="card-title">moodle-tool_opensearch</h3>
+                </div>
+                <span class="status-pill status-research">Planning</span>
+              </div>
+              <p class="card-desc">
+                OpenSearch base for Moodle plugins: connection, a queue in the database, bulk shipping with retries, data streams with retention and metrics.
+              </p>
+              <div class="card-tags">
+                <span class="tag">OpenSearch</span>
+                <span class="tag">Bulk</span>
+                <span class="tag">Data streams</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="https://github.com/moodle-observability/moodle-tool_opensearch" target="_blank" rel="noopener" class="repo-link">
+                GitHub <i data-lucide="external-link"></i>
+              </a>
+              <span class="docs-link is-disabled" aria-disabled="true" title="Not published in the Moodle Plugins directory yet">
+                Marketplace
+              </span>
+              <a href="https://moodle-observability.github.io/moodle-tool_opensearch/" target="_blank" rel="noopener" class="docs-link">
+                Documentation <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="repo-card" data-search="moodle-logstore_opensearch logstore opensearch logs events xapi statements" data-group="plugins">
+            <div>
+              <div class="card-header">
+                <div class="card-title-group">
+                  <img class="card-icon" src="/img/plugins/logstore_opensearch.svg" alt="" width="40" height="40" />
+                  <h3 class="card-title">moodle-logstore_opensearch</h3>
+                </div>
+                <span class="status-pill status-research">Planning</span>
+              </div>
+              <p class="card-desc">
+                Log store that writes Moodle events to OpenSearch: the same fields as the standard log, or xAPI statements, each in its own data stream.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Logs</span>
+                <span class="tag">OpenSearch</span>
+                <span class="tag">xAPI</span>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <a href="https://github.com/moodle-observability/moodle-logstore_opensearch" target="_blank" rel="noopener" class="repo-link">
+                GitHub <i data-lucide="external-link"></i>
+              </a>
+              <span class="docs-link is-disabled" aria-disabled="true" title="Not published in the Moodle Plugins directory yet">
+                Marketplace
+              </span>
+              <a href="https://moodle-observability.github.io/moodle-logstore_opensearch/" target="_blank" rel="noopener" class="docs-link">
                 Documentation <i data-lucide="arrow-up-right"></i>
               </a>
             </div>

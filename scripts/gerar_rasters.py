@@ -86,7 +86,7 @@ def main() -> None:
             RAIZ / "pages/favicon.ico",
         )
     ]
-    for logo in sorted(RAIZ.glob("tool_*/docs/logo/logo.svg")):
+    for logo in sorted([*RAIZ.glob("tool_*/docs/logo/logo.svg"), *RAIZ.glob("logstore_*/docs/logo/logo.svg")]):
         pasta = logo.parent
         alvos.append((logo, pasta / "logo-512.png", None, pasta / "favicon.ico"))
 
